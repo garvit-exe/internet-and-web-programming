@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiple-Choice Quiz</title>
+    <link rel="stylesheet" href="8.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Multiple-Choice Quiz</h1>
+      <p id="timer">Time left: <span id="time">60</span> seconds</p>
+      <form id="quizForm">
+        <div class="question">
+          <h3>1. What is the capital of France?</h3>
+          <label><input type="radio" name="q1" value="Paris" /> Paris</label
+          ><br />
+          <label><input type="radio" name="q1" value="London" /> London</label
+          ><br />
+          <label><input type="radio" name="q1" value="Berlin" /> Berlin</label
+          ><br />
+          <label><input type="radio" name="q1" value="Madrid" /> Madrid</label
+          ><br />
+          <input
+            type="text"
+            class="correct-answer"
+            readonly
+            placeholder="Correct answer will
+be shown here"
+          />
+        </div>
+        <div class="question">
+          <h3>2. Who wrote 'Hamlet'?</h3>
+          <label
+            ><input type="radio" name="q2" value="Shakespeare" /> William
+            Shakespeare</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="Hemingway" /> Ernest
+            Hemingway</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="Twain" /> Mark Twain</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="Dickens" /> Charles
+            Dickens</label
+          ><br />
+          <input
+            type="text"
+            class="correct-answer"
+            readonly
+            placeholder="Correct answer will
+be shown here"
+          />
+        </div>
+        <div class="question">
+          <h3>3. What is the largest planet in our solar system?</h3>
+          <label><input type="radio" name="q3" value="Jupiter" /> Jupiter</label
+          ><br />
+          <label><input type="radio" name="q3" value="Saturn" /> Saturn</label
+          ><br />
+          <label><input type="radio" name="q3" value="Mars" /> Mars</label
+          ><br />
+          <label><input type="radio" name="q3" value="Venus" /> Venus</label
+          ><br />
+          <input
+            type="text"
+            class="correct-answer"
+            readonly
+            placeholder="Correct answer will
+be shown here"
+          />
+        </div>
+        <div class="question">
+          <h3>4. What is the boiling point of water?</h3>
+          <label><input type="radio" name="q4" value="100" /> 100°C</label
+          ><br />
+          <label><input type="radio" name="q4" value="90" /> 90°C</label><br />
+          <label><input type="radio" name="q4" value="120" /> 120°C</label
+          ><br />
+          <label><input type="radio" name="q4" value="110" /> 110°C</label
+          ><br />
+          <input
+            type="text"
+            class="correct-answer"
+            readonly
+            placeholder="Correct answer will
+be shown here"
+          />
+        </div>
+        <div class="question">
+          <h3>5. Who painted the Mona Lisa?</h3>
+          <label
+            ><input type="radio" name="q5" value="Da Vinci" /> Leonardo da
+            Vinci</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="Van Gogh" /> Vincent van
+            Gogh</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="Picasso" /> Pablo
+            Picasso</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="Rembrandt" /> Rembrandt</label
+          ><br />
+          <input
+            type="text"
+            class="correct-answer"
+            readonly
+            placeholder="Correct answer will
+be shown here"
+          />
+        </div>
+        <button type="button" id="submitBtn">Submit</button>
+      </form>
+      <p id="score"></p>
+    </div>
+    <script src="8.js"></script>
+  </body>
+</html>
